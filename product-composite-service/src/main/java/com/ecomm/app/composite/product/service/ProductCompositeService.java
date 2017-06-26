@@ -32,7 +32,7 @@ public class ProductCompositeService {
         return "{\"timestamp\":\"" + new Date() + "\",\"content\":\"Hello from ProductAPi\"}";
     }
 
-    @RequestMapping("/productcomposite/{productId}")
+    @RequestMapping("/product/{productId}")
     public ResponseEntity<ProductAggregated> getProduct(@PathVariable int productId) {
 
         // 1. First get mandatory product information
