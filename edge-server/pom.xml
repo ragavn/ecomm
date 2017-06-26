@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>eureka-server</artifactId>
+    <artifactId>edge-server</artifactId>
     <packaging>jar</packaging>
 
-    <name>eureka-server</name>
-    <description>Eureka Server</description>
+    <name>edge-server</name>
+    <description>Api Gateway Server</description>
 
     <parent>
         <groupId>com.ecomm.app</groupId>
@@ -19,9 +19,18 @@
     <dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+        	<artifactId>spring-cloud-config-client</artifactId>
+		</dependency>
+		<dependency>
+	        	<groupId>org.springframework.cloud</groupId>
+	        	<artifactId>spring-cloud-starter-zuul</artifactId>
+	   	</dependency>
     </dependencies>
 </project>
+
 
 

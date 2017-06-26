@@ -12,6 +12,12 @@
 
     <modules>
         <module>config-server</module>
+        <module>eureka-server</module>
+        <module>edge-server</module>
+        <module>product-composite-service</module>
+        <module>product-service</module>
+        <module>review-service</module>
+        <module>recommendation-service</module>
     </modules>
 
     <parent>
