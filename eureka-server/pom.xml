@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>config-server</artifactId>
+    <artifactId>eureka-server</artifactId>
     <packaging>jar</packaging>
 
-    <name>config-server</name>
-    <description>Config Server</description>
+    <name>eureka-server</name>
+    <description>Eureka Server</description>
 
     <parent>
         <groupId>com.ecomm.app</groupId>
@@ -17,10 +17,11 @@
     </parent>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-        </dependency>
+	<dependency>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-eureka-server</artifactId>
+	</dependency>
     </dependencies>
 </project>
+
 
